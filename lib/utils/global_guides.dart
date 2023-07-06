@@ -1,6 +1,6 @@
 // ignore_for_file: unused_local_variable, non_constant_identifier_names, unused_element
 
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 class AppSetting {
   // Colors
@@ -17,138 +17,123 @@ class AppSetting {
 
   //bold
 
-  static TextStyle poppinsBoldHeading = TextStyle(
+  static TextStyle poppingBoldHeader = const TextStyle(
     color: mainColor,
-    fontSize: 56,
+    fontSize: 35,
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w600,
-    height: 67.20,
+    fontWeight: FontWeight.bold,
   );
-  static TextStyle poppinsBoldh1 = TextStyle(
+
+  static TextStyle poppinsBoldh1 = const TextStyle(
     color: mainColor,
     fontSize: 48,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 57.60,
   );
-  static TextStyle poppinsBoldh2 = TextStyle(
+  static TextStyle poppinsBoldh2 = const TextStyle(
     color: mainColor,
     fontSize: 40,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 48,
   );
-  static TextStyle poppinsBoldh3 = TextStyle(
+  static TextStyle poppinsBoldh3 = const TextStyle(
     color: mainColor,
     fontSize: 32,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 38.40,
   );
-  static TextStyle poppinsBoldh4 = TextStyle(
+  static TextStyle poppinsBoldh4 = const TextStyle(
     color: mainColor,
     fontSize: 24,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 28.80,
   );
-  static TextStyle poppinsBoldh5 = TextStyle(
+  static TextStyle poppinsBoldh5 = const TextStyle(
     color: mainColor,
     fontSize: 20,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 28,
   );
-  static TextStyle poppinsBoldp = TextStyle(
+  static TextStyle poppinsBoldp = const TextStyle(
     color: mainColor,
     fontSize: 16,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 24,
   );
-  static TextStyle poppinsBoldlabel = TextStyle(
+  static TextStyle poppinsBoldlabel = const TextStyle(
     color: mainColor,
     fontSize: 14,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 20,
   );
-  static TextStyle poppinsBoldsmall = TextStyle(
+  static TextStyle poppinsBoldsmall = const TextStyle(
     color: mainColor,
     fontSize: 12,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
   );
-  static TextStyle poppinsBoldtiny = TextStyle(
+  static TextStyle poppinsBoldtiny = const TextStyle(
     color: mainColor,
     fontSize: 10,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle poppinsRegularHeading = TextStyle(
+  static TextStyle poppinsRegularHeading = const TextStyle(
     color: mainColor,
     fontSize: 56,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 67.20,
   );
-  static TextStyle poppinsRegularh1 = TextStyle(
+  static TextStyle poppinsRegularh1 = const TextStyle(
     color: mainColor,
     fontSize: 48,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 57.60,
   );
-  static TextStyle poppinsRegularh2 = TextStyle(
+  static TextStyle poppinsRegularh2 = const TextStyle(
     color: mainColor,
     fontSize: 40,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 48,
   );
-  static TextStyle poppinsRegularh3 = TextStyle(
+  static TextStyle poppinsRegularh3 = const TextStyle(
     color: mainColor,
     fontSize: 32,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 38.40,
   );
-  static TextStyle poppinsRegularh4 = TextStyle(
+  static TextStyle poppinsRegularh4 = const TextStyle(
     color: mainColor,
     fontSize: 24,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 28.80,
   );
-  static TextStyle poppinsRegularh5 = TextStyle(
+  static TextStyle poppinsRegularh5 = const TextStyle(
     color: mainColor,
     fontSize: 20,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 28,
   );
-  static TextStyle poppinsRegularp = TextStyle(
+  static TextStyle poppinsRegularp = const TextStyle(
     color: mainColor,
     fontSize: 16,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 24,
   );
-  static TextStyle poppinsRegularlabel = TextStyle(
+  static TextStyle poppinsRegularlabel = const TextStyle(
     color: mainColor,
     fontSize: 14,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
-    height: 20,
   );
-  static TextStyle poppinsRegularsmall = TextStyle(
+  static TextStyle poppinsRegularsmall = const TextStyle(
     color: mainColor,
     fontSize: 12,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
   );
-  static TextStyle poppinsRegulartiny = TextStyle(
+  static TextStyle poppinsRegulartiny = const TextStyle(
     color: mainColor,
     fontSize: 10,
     fontFamily: 'Poppins',

@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/screens/home/home.dart';
+import 'package:ecommerce_app/screens/boarding/boarding.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,9 +14,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const BoardingScreen(),
     );
   }
 }
