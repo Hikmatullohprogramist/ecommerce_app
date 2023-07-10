@@ -70,7 +70,7 @@ class AppSetting {
     color: mainColor,
     fontSize: 12,
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.bold,
   );
   static TextStyle poppinsBoldtiny = const TextStyle(
     color: mainColor,
@@ -131,7 +131,7 @@ class AppSetting {
     color: mainColor,
     fontSize: 12,
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w100,
   );
   static TextStyle poppinsRegulartiny = const TextStyle(
     color: mainColor,

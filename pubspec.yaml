@@ -87,5 +87,7 @@ flutter:
     - assets/
     - assets/fonts/
     - assets/images/
+    - assets/images/icons/
+    - assets/images/icons/category_imgs/
 
 

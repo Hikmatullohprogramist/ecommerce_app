@@ -4,6 +4,24 @@ class Assets {
 
   static const String fontsPoppinsBold = 'assets/fonts/Poppins-Bold.ttf';
   static const String fontsPoppinsRegular = 'assets/fonts/Poppins-Regular.ttf';
+  static const String iconsBackContainer = 'assets/images/icons/Back Container.png';
+  static const String iconsBaselineKeyboardArrowDown24px = 'assets/images/icons/baseline-keyboard_arrow_down-24px.png';
+  static const String iconsBell = 'assets/images/icons/bell.png';
+  static const String iconsBiCart2 = 'assets/images/icons/bi_cart2.png';
+  static const String iconsBiPerson = 'assets/images/icons/bi_person.png';
+  static const String iconsClarityHomeSolid = 'assets/images/icons/clarity_home-solid.png';
+  static const String iconsDelete = 'assets/images/icons/Delete.png';
+  static const String iconsEdit2 = 'assets/images/icons/edit-2.png';
+  static const String iconsEye1 = 'assets/images/icons/eye 1.png';
+  static const String iconsFiClock = 'assets/images/icons/fi_clock.png';
+  static const String iconsFrame14 = 'assets/images/icons/Frame 14.png';
+  static const String iconsFrame15 = 'assets/images/icons/Frame 15.png';
+  static const String iconsLogout = 'assets/images/icons/Logout.png';
+  static const String iconsMarker1 = 'assets/images/icons/marker 1.png';
+  static const String iconsPlus = 'assets/images/icons/plus.png';
+  static const String iconsRiSearch2Line = 'assets/images/icons/ri_search-2-line.png';
+  static const String iconsShape = 'assets/images/icons/Shape.png';
+  static const String iconsShoppingBagicon = 'assets/images/icons/shopping_bag icon.png';
   static const String imagesBoarding = 'assets/images/boarding.png';
   static const String imagesSofa = 'assets/images/sofa.png';
 

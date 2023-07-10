@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/screens/home/home.dart';
 import 'package:ecommerce_app/utils/global_guides.dart';
 import 'package:ecommerce_app/widgets/button.dart';
 import 'package:flutter/material.dart';
@@ -117,7 +118,11 @@ class SignUp extends StatelessWidget {
                           labelStyle: AppSetting.poppinsRegularlabel,
                         ),
                       ),
-                      const CustomButton(title: "Log in"),
+                        InkWell(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(),));
+                            },
+                            child: CustomButton(title: "Log in")),
                       Center(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
