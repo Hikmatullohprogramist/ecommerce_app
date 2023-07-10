@@ -37,29 +37,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppSetting.bgColor,
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: AppSetting.subcolor,
-        type: BottomNavigationBarType.fixed,
-        elevation: 5,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_rounded),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.bookmark_outline_sharp),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "",
-          ),
-        ],
-      ),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: SafeArea(
@@ -81,7 +58,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             "MAKE HOME",
                             style: AppSetting.poppinsRegularsmall,
                           ),
-                          Text("BEAUTIFUL", style: AppSetting.poppinsBoldp),
+                          Text(
+                            "BEAUTIFUL",
+                            style: AppSetting.poppinsBoldp,
+                          ),
                         ],
                       ),
                       Image.asset(Assets.iconsBiCart2),
@@ -143,10 +123,26 @@ class _HomeScreenState extends State<HomeScreen> {
                             products[index].title,
                             style: AppSetting.poppinsRegularsmall,
                           ),
-                          Text(
-                            "\$${products[index].price}",
-                            style: AppSetting.poppinsBoldsmall,
-                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "\$${products[index].price}",
+                                style: AppSetting.poppinsBoldsmall,
+                              ),
+                              Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: AppSetting.greyColor,
+                                ),
+                                child: const Icon(
+                                  Icons.shopping_bag,
+                                  color: AppSetting.mainColor,
+                                ),
+                              )
+                            ],
+                          )
                         ],
                       ),
                     );

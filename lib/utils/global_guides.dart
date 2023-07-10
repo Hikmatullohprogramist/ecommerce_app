@@ -12,6 +12,7 @@ class AppSetting {
   static const Color successColor = Color(0xff27AE60);
   static const Color yellowColor = Color(0xffF2C94C);
   static const Color dangerColor = Color(0xffEB5757);
+  static const Color greyColor = Color.fromARGB(255, 199, 199, 199);
 
 // Texts styles
 
@@ -64,7 +65,7 @@ class AppSetting {
     color: mainColor,
     fontSize: 14,
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.bold,
   );
   static TextStyle poppinsBoldsmall = const TextStyle(
     color: mainColor,

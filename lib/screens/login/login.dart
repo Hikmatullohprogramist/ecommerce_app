@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/screens/bottom_nav_bar.dart';
 import 'package:ecommerce_app/utils/global_guides.dart';
 import 'package:ecommerce_app/widgets/button.dart';
 import 'package:flutter/material.dart';
@@ -118,7 +119,7 @@ class Login extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const HomeScreen(),
+                                builder: (context) => MyHomePage(),
                               ),
                             );
                           },
