@@ -59,7 +59,7 @@ class _FavouriteScreenState extends State<FavoriteScreen> {
               },
             ),
           ),
-          CustomButton(title: "Add all to my cart")
+          const CustomButton(title: "Add all to my cart")
         ],
       ),
     );

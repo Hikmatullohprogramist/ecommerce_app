@@ -1,4 +1,3 @@
-import 'package:ecommerce_app/screens/home/home.dart';
 import 'package:ecommerce_app/utils/global_guides.dart';
 import 'package:ecommerce_app/widgets/button.dart';
 import 'package:flutter/material.dart';
@@ -124,10 +123,10 @@ class SignUp extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => MyHomePage(),
+                                  builder: (context) => const MyHomePage(),
                                 ));
                           },
-                          child: CustomButton(title: "Log in")),
+                          child: const CustomButton(title: "Log in")),
                       Center(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -141,7 +140,7 @@ class SignUp extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => Login(),
+                                      builder: (context) => const Login(),
                                     ));
                               },
                               child: Text(

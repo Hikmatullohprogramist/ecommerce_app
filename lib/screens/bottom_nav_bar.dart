@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:ecommerce_app/screens/favorite/favorite.dart';
 import 'package:ecommerce_app/screens/notification/notification_screen.dart';
 import 'package:ecommerce_app/screens/profile/profile_screen.dart';
@@ -7,6 +9,8 @@ import 'package:flutter/material.dart';
 import 'home/home.dart';
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -15,10 +19,10 @@ class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    HomeScreen(),
-    FavoriteScreen(),
-    NotificationScreen(),
-    ProfileScreen(),
+    const HomeScreen(),
+    const FavoriteScreen(),
+    const NotificationScreen(),
+    const ProfileScreen(),
   ];
 
   @override

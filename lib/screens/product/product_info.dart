@@ -1,7 +1,6 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, sized_box_for_whitespace
 
 import 'package:ecommerce_app/utils/global_guides.dart';
-import 'package:ecommerce_app/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 class ProductInfoScreen extends StatefulWidget {
@@ -56,9 +55,12 @@ class _ProductInfoScreenState extends State<ProductInfoScreen> {
               margin: const EdgeInsets.only(top: 8, bottom: 8),
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  color: AppSetting.subcolor,
-                  boxShadow: [AppSetting.backgroundShadow]),
+                borderRadius: BorderRadius.circular(30),
+                color: AppSetting.subcolor,
+                boxShadow: const [
+                  AppSetting.backgroundShadow,
+                ],
+              ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -230,24 +232,51 @@ class _ProductInfoScreenState extends State<ProductInfoScreen> {
                     const SizedBox(
                       height: 5,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            color: AppSetting.greyColor,
-                            borderRadius: BorderRadius.circular(8),
+                    Container(
+                      height: 70,
+                      width: MediaQuery.sizeOf(context).width,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              color: AppSetting.greyColor,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: const Icon(Icons.bookmark),
                           ),
-                          child: const Icon(Icons.bookmark),
-                        ),
-                        Container(
-                          width: 280,
-                          child: const CustomButton(title: "Add to card"),
-                        ),
-                      ],
-                    ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Expanded(
+                            child: Container(
+                              height: 56,
+                              // margin: const EdgeInsets.only(
+                              //     bottom: 20, left: 32, right: 32),
+                              decoration: ShapeDecoration(
+                                color: AppSetting.mainColor,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  "Add to card",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),

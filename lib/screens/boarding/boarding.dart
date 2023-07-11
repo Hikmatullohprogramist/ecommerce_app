@@ -14,7 +14,7 @@ class BoardingScreen extends StatelessWidget {
           Container(
             width: 411,
             height: 1273,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("assets/images/boarding.png"),
                 fit: BoxFit.fill,
@@ -38,7 +38,7 @@ class BoardingScreen extends StatelessWidget {
             child: SizedBox(
               width: 377,
               child: Text(
-                'The best simple place where you discover \nmost wonderful furnitures and make your \nhome beautiful',
+                'The best simple place where you discover \nmost wonderful furniture`s and make your \nhome beautiful',
                 style: AppSetting.poppinsRegulartiny,
               ),
             ),
@@ -54,8 +54,8 @@ class BoardingScreen extends StatelessWidget {
                     ));
               },
               child: const CustomButton(
-                  title: "Get Started",
-                   ),
+                title: "Get Started",
+              ),
             ),
           ),
         ],

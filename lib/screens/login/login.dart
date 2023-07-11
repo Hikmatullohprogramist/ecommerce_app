@@ -3,7 +3,6 @@ import 'package:ecommerce_app/utils/global_guides.dart';
 import 'package:ecommerce_app/widgets/button.dart';
 import 'package:flutter/material.dart';
 
-import '../home/home.dart';
 import '../signup/signup.dart';
 
 class Login extends StatelessWidget {
@@ -119,7 +118,7 @@ class Login extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => MyHomePage(),
+                                builder: (context) => const MyHomePage(),
                               ),
                             );
                           },

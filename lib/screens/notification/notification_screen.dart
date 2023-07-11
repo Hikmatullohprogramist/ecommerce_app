@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/utils/global_guides.dart';
-import 'package:ecommerce_app/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 class NotificationScreen extends StatefulWidget {

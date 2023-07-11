@@ -1,5 +1,6 @@
+// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
+
 import 'package:ecommerce_app/utils/global_guides.dart';
-import 'package:ecommerce_app/widgets/background_container.dart';
 import 'package:ecommerce_app/widgets/profile_card.dart';
 import 'package:flutter/material.dart';
 
@@ -64,10 +65,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 child: ListView(
                   shrinkWrap: true,
                   primary: false,
-                  children: [
+                  children: const [
                     ProfileCard(
                       title: "My orders",
-                      subtitle: "Already have 10 oreders",
+                      subtitle: "Already have 10 orders",
                     ),
                     ProfileCard(
                       title: "Shipping Addresses",
