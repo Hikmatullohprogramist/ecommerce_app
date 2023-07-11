@@ -14,6 +14,13 @@ class AppSetting {
   static const Color dangerColor = Color(0xffEB5757);
   static const Color greyColor = Color.fromARGB(255, 199, 199, 199);
 
+//Shadows
+  static const BoxShadow backgroundShadow = BoxShadow(
+    color: Color(0x338A959E),
+    blurRadius: 40,
+    offset: Offset(0, 8),
+    spreadRadius: 0,
+  );
 // Texts styles
 
   //bold
@@ -47,13 +54,13 @@ class AppSetting {
     color: mainColor,
     fontSize: 24,
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.bold,
   );
   static TextStyle poppinsBoldh5 = const TextStyle(
     color: mainColor,
     fontSize: 20,
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.bold,
   );
   static TextStyle poppinsBoldp = const TextStyle(
     color: mainColor,

@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/data/models/category_model.dart';
 import 'package:ecommerce_app/data/models/product_model.dart';
+import 'package:ecommerce_app/screens/product/product_info.dart';
 import 'package:ecommerce_app/utils/global_guides.dart';
 import 'package:ecommerce_app/widgets/home_screen_category.dart';
 import 'package:flutter/material.dart';
@@ -100,50 +101,65 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisCount: 2, childAspectRatio: 2 / 3),
                   itemCount: products.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return Card(
-                      elevation: 0,
-                      color: Colors.transparent,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12),
-                                image: DecorationImage(
-                                    image: AssetImage(
-                                      products[index].imPath,
-                                    ),
-                                    fit: BoxFit.cover),
+                    return GestureDetector(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ProductInfoScreen(
+                              product_name: products[index].title,
+                              product_image: products[index].imPath,
+                              product_price: products[index].price.toString(),
+                              product_rating: "5",
+                              product_comment:
+                                  "This is a product comment: asdsad ds ads asd asd asd asdasda sdas d asd asdas das da sdas d asd asdas dasdasdasdasd ddddjhkjdfhkj dhfkjh jh kjfh",
+                            ),
+                          )),
+                      child: Card(
+                        elevation: 0,
+                        color: Colors.transparent,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                        products[index].imPath,
+                                      ),
+                                      fit: BoxFit.cover),
+                                ),
                               ),
                             ),
-                          ),
-                          Text(
-                            products[index].title,
-                            style: AppSetting.poppinsRegularsmall,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "\$${products[index].price}",
-                                style: AppSetting.poppinsBoldsmall,
-                              ),
-                              Container(
-                                width: 30,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                  color: AppSetting.greyColor,
+                            Text(
+                              products[index].title,
+                              style: AppSetting.poppinsRegularsmall,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "\$${products[index].price}",
+                                  style: AppSetting.poppinsBoldsmall,
                                 ),
-                                child: const Icon(
-                                  Icons.shopping_bag,
-                                  color: AppSetting.mainColor,
-                                ),
-                              )
-                            ],
-                          )
-                        ],
+                                Container(
+                                  width: 30,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                    color: AppSetting.greyColor,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: const Icon(
+                                    Icons.shopping_bag,
+                                    color: AppSetting.mainColor,
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     );
                   },

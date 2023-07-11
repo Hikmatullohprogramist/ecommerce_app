@@ -20,14 +20,7 @@ class BackgroundContainer extends StatelessWidget {
       padding: const EdgeInsets.only(left: 20, right: 20),
       decoration: const BoxDecoration(
         color: AppSetting.subcolor,
-        boxShadow: [
-          BoxShadow(
-            color: Color(0x338A959E),
-            blurRadius: 40,
-            offset: Offset(0, 8),
-            spreadRadius: 0,
-          )
-        ],
+        boxShadow: [AppSetting.backgroundShadow],
       ),
       child: child,
     );
