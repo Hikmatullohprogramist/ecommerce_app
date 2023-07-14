@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:ecommerce_app/screens/boarding/boarding.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +16,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
         useMaterial3: true,
+        primaryColor: Color(0xff242424),
       ),
       home: const BoardingScreen(),
     );

@@ -1,5 +1,8 @@
 // ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
 
+import 'package:ecommerce_app/screens/order/order.dart';
+import 'package:ecommerce_app/screens/review/review.dart';
+import 'package:ecommerce_app/screens/shipping/shipping.dart';
 import 'package:ecommerce_app/utils/global_guides.dart';
 import 'package:ecommerce_app/widgets/profile_card.dart';
 import 'package:flutter/material.dart';
@@ -23,6 +26,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         title: const Text("Profile"),
       ),
       body: SingleChildScrollView(
+        physics: NeverScrollableScrollPhysics(),
         child: Padding(
           padding: const EdgeInsets.only(left: 20.0, right: 20),
           child: Column(
@@ -65,22 +69,43 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 child: ListView(
                   shrinkWrap: true,
                   primary: false,
-                  children: const [
-                    ProfileCard(
-                      title: "My orders",
-                      subtitle: "Already have 10 orders",
+                  children: [
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => OrdersScreen(),
+                          )),
+                      child: ProfileCard(
+                        title: "My orders",
+                        subtitle: "Already have 10 orders",
+                      ),
                     ),
-                    ProfileCard(
-                      title: "Shipping Addresses",
-                      subtitle: "03 Addresses",
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ShippingScreen(),
+                          )),
+                      child: ProfileCard(
+                        title: "Shipping Addresses",
+                        subtitle: "03 Addresses",
+                      ),
                     ),
                     ProfileCard(
                       title: "Payment Method",
                       subtitle: "You have 2 cards",
                     ),
-                    ProfileCard(
-                      title: "My reviews",
-                      subtitle: "Review for 5 items",
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ReviewScreen(),
+                          )),
+                      child: ProfileCard(
+                        title: "My reviews",
+                        subtitle: "Review for 5 items",
+                      ),
                     ),
                     ProfileCard(
                       title: "Settings",

@@ -66,7 +66,7 @@ class AppSetting {
     color: mainColor,
     fontSize: 16,
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.bold,
   );
   static TextStyle poppinsBoldlabel = const TextStyle(
     color: mainColor,
